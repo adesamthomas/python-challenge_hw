@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Visualization Latitude</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body style="background-color: lightgray">
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html">
+                <span class="nav-color"; style="color:#FFFFFF; background-color: #1FB5B5; font-weight: bold; font-size:25px";>Latitude</span></a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="latitude_v_temperature.html">Max Temperature</a></li>
+                     <li><a href="latitude_v_humidity.html">Humidity</a></li>
+                     <li><a href="latitude_v_cloudiness.html">Cloudiness</a></li>
+                     <li><a href="latitude_v_wind_speed.html">Wind Speed</a></li>
+                 </ul>
+             </li>
+             <li><a href="comparisons.html"> Comparison</a></li>
+             <li><a href="data.html"> Data</a></li>
+         </div>
+     </div>
+ </nav>
+
+
+ <div class = "container">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+
+                  <h2 style="color:#1FB5B5";>Summary: Latitude vs. X</h2>
+                  <hr>
+                  <img class="first image" src="Images\Latitude_v_Temperature.png" alt="first image" >
+                  <p class = "text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2 style="color:#1FB5B5";>Visualizations</h2>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="latitude_v_temperature.html"><img class = "img img-responsive" src="Images\Latitude_v_Temperature.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="latitude_v_humidity.html"><img class = "img img-responsive" src="Images\Latitude_v_Humidity.png" style="width:100%" alt=""></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="latitude_v_cloudiness.html"><img class = "img img-responsive" src="Images\Latitude_v_Cloudiness.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="latitude_v_wind_speed"><img class = "img img-responsive" src="Images\Latitude_v_WindSpeed.png" style="width:100%" alt=""></a></div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
